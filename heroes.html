@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes - Overwatch 2</title>
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+
+    <!-- Hero Section -->
+    <section class="heroes-hero">
+        <div class="hero-overlay-content w3-center">
+            <h1 class="hero-main-title">HEROES</h1>
+            <div class="hero-underline"></div>
+            <p class="hero-subtitle">Meet the fearless fighters of Overwatch</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="w3-container section-bg heroes-bg section-padding">
+        <div>
+            <h2 class="w3-center w3-xxlarge w3-bold w3-text-white heroes-title">
+                Meet the Heroes of Overwatch
+            </h2>
+        </div>
+
+        <!-- Hero Index filter -->
+        <div class="filter-container w3-center w3-margin-bottom">
+            <div class="filter-scroll">
+                <button class="filter-btn active" onclick="filterHeroes('all')">All</button>
+                <button class="filter-btn" onclick="filterHeroes('damage')"><img
+                        src="media/images/heroes/damage-icon.png" alt="Damage icon">Damage</button>
+                <button class="filter-btn" onclick="filterHeroes('tank')"><img src="media/images/heroes/tank-icon.png"
+                        alt="Tank icon">Tank</button>
+                <button class="filter-btn" onclick="filterHeroes('support')"><img
+                        src="media/images/heroes/support-icon.png" alt="Support icon">Support</button>
+            </div>
+        </div>
+
+        <!-- Role Description -->
+        <div id="role-description" class="role-description w3-center">
+            <p>Overwatch features an international cast of powerful heroes with captivating personalities and
+                backstories. Explore the full roster below.</p>
+        </div>
+
+        <!-- Heroes Section -->
+        <div class="role-section">
+            <div class="w3-row-padding hero-row">
+
+                <!-- Ana -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/ana.png" alt="Ana" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Ana</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ashe -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/ashe.png" alt="Ashe" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Ashe</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baptiste -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/baptiste.png" alt="Baptiste"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Baptiste</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bastion -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/bastion.png" alt="Bastion"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Bastion</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brigitte -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/brigitte.png" alt="Brigitte"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Brigitte</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cassidy -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/cassidy.png" alt="Cassidy"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Cassidy</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- D.Va -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/dva.png" alt="D.Va" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">D.Va</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doomfist -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/doomfist.png" alt="Doomfist"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Doomfist</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Echo -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/echo.png" alt="Echo" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Echo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freja -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/freja.png" alt="Freja"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Freja</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Genji -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/genji.png" alt="Genji"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Genji</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hanzo -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/hanzo.png" alt="Hanzo"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Hanzo</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hazard -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/hazard.png" alt="Hazard"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Hazard</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Illari -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/illari.png" alt="Illari"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Illari</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juno -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/juno.png" alt="Juno" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Juno</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Junker Queen -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/junker-queen.png" alt="Junker Queen"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Junker Queen</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Junkrat -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/junkrat.png" alt="Junkrat"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Junkrat</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kiriko -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/kiriko.png" alt="Kiriko"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Kiriko</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifeweaver -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/lifeweaver.png" alt="Lifeweaver"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Lifeweaver</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lucio -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/lucio.png" alt="Lucio"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Lucio</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mauga -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/mauga.png" alt="Mauga"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Mauga</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mei -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/mei.png" alt="Mei" class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Mei</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercy -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/mercy.png" alt="Mercy"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Mercy</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moira -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/moira.png" alt="Moira"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Moira</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orisa -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/orisa.png" alt="Orisa"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Orisa</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pharah -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/pharah.png" alt="Pharah"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Pharah</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ramattra -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/ramattra.png" alt="Ramattra"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Ramattra</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reaper -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/reaper.png" alt="Reaper"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Reaper</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reinhardt -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/reinhardt.png" alt="Reinhardt"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Reinhardt</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roadhog -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/roadhog.png" alt="Roadhog"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Roadhog</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sigma -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/sigma.png" alt="Sigma"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Sigma</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soldier: 76 -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/soldier-76.png" alt="Soldier: 76"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Soldier: 76</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sombra -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/sombra.png" alt="Sombra"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Sombra</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sojourn -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/sojourn.png" alt="Sojourn"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Sojourn</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Symmetra -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/symmetra.png" alt="Symmetra"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Symmetra</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Torbjörn -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/torbjorn.png" alt="Torbjörn"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Torbjörn</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tracer -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/tracer.png" alt="Tracer"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Tracer</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venture -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/venture.png" alt="Venture"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Venture</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Widowmaker -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="damage">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/widowmaker.png" alt="Widowmaker"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/damage-icon.png" alt="Damage icon">
+                                <h3 class="hero-name w3-text-black">Widowmaker</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Winston -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/winston.png" alt="Winston"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Winston</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wrecking Ball -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/wrecking-ball.png" alt="Wrecking Ball"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Wrecking Ball</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wuyang -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/wuyang.png" alt="Wuyang"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Wuyang</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zarya -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="tank">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/zarya.png" alt="Zarya"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/tank-icon.png" alt="Tank icon">
+                                <h3 class="hero-name w3-text-black">Zarya</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zenyatta -->
+                <div class="w3-col l2 m4 s6 hero-item" data-role="support">
+                    <div class="hero-card w3-card-4 w3-round-large">
+                        <img src="media/images/heroes/headshots/zenyatta.png" alt="Zenyatta"
+                            class="hero-image w3-round-large">
+                        <div class="hero-info w3-center w3-padding">
+                            <div class="hero-name-container">
+                                <img src="media/images/heroes/support-icon.png" alt="Support icon">
+                                <h3 class="hero-name w3-text-black">Zenyatta</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+
+    <script>
+        w3.includeHTML();
+
+        // Mobile menu toggle script
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+
+        // Filter heroes function
+        function filterHeroes(role) {
+            const heroItems = document.querySelectorAll('.hero-item');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const roleDescription = document.getElementById('role-description');
+
+            // Remove active class from all buttons
+            filterBtns.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Show/hide heroes based on role
+            heroItems.forEach(item => {
+                if (role === 'all' || item.dataset.role === role) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Update role message
+            const messages = {
+                'all': {
+                    description: "Overwatch features an international cast of powerful heroes with captivating personalities and backstories. Explore the full roster below."
+                },
+                'damage': {
+                    description: "Damage heroes seek out, engage, and obliterate the enemy with wide-ranging tools, abilities, and play styles. Fearsome but fragile, these heroes require backup to survive."
+                },
+                'tank': {
+                    description: "Tank heroes soak up damage and shatter fortified positions, like closely grouped enemies and narrow chokepoints. If you're a tank, you lead the charge."
+                },
+                'support': {
+                    description: "Support heroes empower their allies by healing, shielding, boosting damage, and disabling foes. As a support, you're the backbone of your team's survival."
+                }
+            };
+
+            roleDescription.innerHTML = `<p>${messages[role].description}</p>`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Overwatch 2</title>
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+    <!-- Main Content -->
+    <main class="w3-container section-bg news-section section-padding">
+        <div class="news-wrapper">
+            <!-- Featured News -->
+            <div class="featured-news">
+                <img src="media/images/news/feaured-news-thumbnail.jpg" alt="Featured News" class="featured-image">
+                <div class="featured-content">
+                    <span class="featured-badge">FEATURED</span>
+                    <div class="news-date">OCTOBER 14, 2025</div>
+                    <h2 class="featured-news-title">Season 19: Masquerade Continues with New Heroes and
+                        Maps</h2>
+                    <p class="featured-news-excerpt">The Haunted Masquerade rages on with a midseason
+                        lineup packed with power plays and plot. Battle through the new Spirit Showdown mode and ignite
+                        mayhem with Mythic Cyber Fuel Junkrat...</p>
+                </div>
+            </div>
+            <!-- News Grid -->
+            <div class="w3-row news-grid">
+                <!-- News Card 1 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/new-hero-thumbnail.jpg" alt="Hero Update" class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">OCTOBER 10, 2025</div>
+                            <h3 class="news-title">New Hero Abilities Revealed</h3>
+                            <p class="news-excerpt">Discover the latest hero abilities and how they'll change the
+                                battlefield dynamics in upcoming matches.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 2 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/balance-thumbnail.jpg" alt="Balance Update" class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">SEPTEMBER 22, 2025</div>
+                            <h3 class="news-title">Balance Changes Coming Soon</h3>
+                            <p class="news-excerpt">Major balance adjustments are on the way to ensure fair and
+                                competitive gameplay for all heroes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 3 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/summer-games-thumbnail.jpg" alt="Event News" class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">JUNE 8, 2025</div>
+                            <h3 class="news-title">Summer Games Event</h3>
+                            <p class="news-excerpt">Join the festive celebration with exclusive skins, game modes, and
+                                seasonal rewards.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 4 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/championship-finals-thumbnail.jpg" alt="Esports" class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">APRIL 4, 2025</div>
+                            <h3 class="news-title">Championship Finals Results</h3>
+                            <p class="news-excerpt">Recap of the thrilling championship matches and celebration of our
+                                new world champions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 5 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/community-spotlight-thumbnail.jpg" alt="Community"
+                            class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">MAY 19, 2025</div>
+                            <h3 class="news-title">Community Spotlight</h3>
+                            <p class="news-excerpt">Highlighting amazing community creations, fan art, and player
+                                achievements from around the world.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 6 -->
+                <div class="w3-col l4 m6 s12">
+                    <div class="news-card w3-card">
+                        <img src="media/images/news/directors-take-thumbnail.png" alt="Developer Update"
+                            class="news-image">
+                        <div class="news-content">
+                            <div class="news-date">MAY 1, 2025</div>
+                            <h3 class="news-title">Developer Insights</h3>
+                            <p class="news-excerpt">Behind-the-scenes look at upcoming features and the development
+                                team's vision for the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+    <script>
+        w3.includeHTML();
+
+        // Mobile menu toggle script
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

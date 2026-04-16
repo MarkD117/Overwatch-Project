@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Overwatch 2</title>
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+    <!-- Main Content -->
+    <main class="w3-container section-bg gallery-section">
+        <!-- Photo Grid -->
+        <div class="w3-row-padding" style="margin-top: 96px;">
+            <!-- Row 1 -->
+            <div class="w3-third">
+                <img class="gallery-img" src="media/images/gallery/gallery1.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery2.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery3.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery4.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery5.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery6.jpg" loading="lazy"
+                    alt="In-game screenshot">
+            </div>
+            <!-- Row 2 -->
+            <div class="w3-third">
+                <img class="gallery-img" src="media/images/gallery/gallery7.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery8.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery9.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery10.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery11.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery12.jpg" loading="lazy"
+                    alt="In-game screenshot">
+            </div>
+            <!-- Row 3 -->
+            <div class="w3-third">
+                <img class="gallery-img" src="media/images/gallery/gallery13.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery14.jpg" alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery15.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery16.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery17.jpg" loading="lazy"
+                    alt="In-game screenshot">
+                <img class="gallery-img" src="media/images/gallery/gallery18.jpg" loading="lazy"
+                    alt="In-game screenshot">
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+    <script>
+        w3.includeHTML();
+
+        // Mobile menu toggle script
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

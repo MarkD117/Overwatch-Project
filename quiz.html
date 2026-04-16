@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+    <script src="scripts/quiz.js" defer></script>
+    <title>Overwatch 2 Quiz</title>
+
+
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+
+    <!-- Main Quiz conatiner -->
+    <main class="quiz-main">
+        <div class="quiz-container">
+
+            <!-- Setup Screen -->
+            <section id="setup-screen">
+                <div class="quiz-card">
+                    <div class="quiz-title-block">
+                        <h1 class="quiz-title">Overwatch 2 Quiz</h1>
+                        <p class="quiz-subtitle">Test your knowledge - Heroes, Maps, Lore, Abilities &amp; Gamemodes</p>
+                    </div>
+                    <h2 class="quiz-section-title">Configure Your Quiz</h2>
+
+                    <!-- Category checkboxes -->
+                    <div class="setup-group">
+                        <span class="setup-label">Select Categories</span>
+                        <div class="category-grid">
+                            <label class="category-label">
+                                <input type="checkbox" class="category-checkbox" value="Heroes" checked>
+                                <i class="fa-solid fa-shield-halved"></i> Heroes
+                            </label>
+                            <label class="category-label">
+                                <input type="checkbox" class="category-checkbox" value="Maps" checked>
+                                <i class="fa-solid fa-map"></i> Maps
+                            </label>
+                            <label class="category-label">
+                                <input type="checkbox" class="category-checkbox" value="Lore" checked>
+                                <i class="fa-solid fa-book"></i> Lore
+                            </label>
+                            <label class="category-label">
+                                <input type="checkbox" class="category-checkbox" value="Abilities" checked>
+                                <i class="fa-solid fa-bolt"></i> Abilities
+                            </label>
+                            <label class="category-label">
+                                <input type="checkbox" class="category-checkbox" value="Gamemodes" checked>
+                                <i class="fa-solid fa-gamepad"></i> Gamemodes
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Question Number & Difficulty Selection -->
+                    <div class="setup-row">
+                        <div class="setup-group">
+                            <label class="setup-label" for="num-questions">Questions (1 - 50)</label>
+                            <input type="number" id="num-questions" class="quiz-input" value="10" min="1" max="50"
+                                placeholder="e.g. 10">
+                            <span id="num-error" class="input-error hidden"></span>
+                        </div>
+
+                        <div class="setup-group">
+                            <span class="setup-label">Difficulty</span>
+                            <div class="difficulty-grid">
+                                <button type="button" class="difficulty-btn active" data-difficulty="All">All</button>
+                                <button type="button" class="difficulty-btn" data-difficulty="Easy">Easy</button>
+                                <button type="button" class="difficulty-btn" data-difficulty="Medium">Med</button>
+                                <button type="button" class="difficulty-btn" data-difficulty="Hard">Hard</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="start-btn" class="quiz-btn quiz-btn-full">Start Quiz</button>
+                </div>
+            </section>
+            <!-- Questions Screen -->
+            <section id="question-screen" class="hidden">
+                <div class="quiz-card">
+
+                    <div class="question-header">
+                        <span id="progress-text" class="progress-text">Question 1 of 10</span>
+                        <div class="timer-box">
+                            <i class="fa-regular fa-clock timer-icon"></i>
+                            <span id="timer-display" class="timer-display">00:00</span>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-wrapper">
+                        <div id="progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+                    </div>
+
+                    <div id="category-badge" class="category-badge">Heroes - Easy</div>
+
+                    <p id="question-text" class="question-text"></p>
+
+                    <div id="options-container"></div>
+
+                    <button id="next-btn" class="quiz-btn quiz-btn-full" style="margin-top: 10px;">
+                        Next &rarr;
+                    </button>
+
+                </div>
+            </section>
+            <!-- Results Screen -->
+            <section id="results-screen" class="hidden">
+                <div class="quiz-card">
+                    <h2 class="quiz-section-title">Quiz Complete</h2>
+
+                    <!-- Results Statistics Grid -->
+                    <div class="results-stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">Score</div>
+                            <div id="score-display" class="stat-value">- / -</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Percentage</div>
+                            <div id="percentage-display" class="stat-value">-%</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Total Time</div>
+                            <div id="total-time-display" class="stat-value">-</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Avg. per Question</div>
+                            <div id="avg-time-display" class="stat-value">-</div>
+                        </div>
+                    </div>
+
+                    <h3 class="quiz-section-title" style="font-size: 16px; margin-bottom: 14px;">
+                        Category Breakdown
+                    </h3>
+                    <div class="quiz-table-wrapper" style="margin-bottom: 24px;">
+                        <div id="category-breakdown" style="overflow-x: auto;"></div>
+                    </div>
+
+                    <!-- Review/Play Again buttons -->
+                    <div class="results-actions">
+                        <button id="review-btn" class="quiz-btn-secondary">
+                            <i class="fa-solid fa-list-check"></i>&nbsp; Review Answers
+                        </button>
+                        <button id="play-again-btn" class="quiz-btn">
+                            <i class="fa-solid fa-rotate-right"></i>&nbsp; Play Again
+                        </button>
+                    </div>
+
+                    <hr class="quiz-divider">
+
+                    <h3 class="quiz-section-title" style="font-size: 16px; margin-bottom: 14px;">
+                        Save Your Score
+                    </h3>
+                    <div class="save-score-row">
+                        <input type="text" id="player-name" class="quiz-input" placeholder="Enter your name&#8230;"
+                            maxlength="30">
+                        <button id="save-score-btn" class="quiz-btn">Save Score</button>
+                    </div>
+
+                    <hr class="quiz-divider">
+
+                    <div class="leaderboard-header-row">
+                        <h3 class="quiz-section-title" style="font-size: 16px; margin: 0; border: none; padding: 0;">
+                            Leaderboard
+                        </h3>
+                        <button id="clear-leaderboard-btn" class="quiz-btn-danger">
+                            <i class="fa-solid fa-trash"></i>&nbsp; Clear
+                        </button>
+                    </div>
+                    <div class="quiz-table-wrapper">
+                        <div id="leaderboard-table-container" style="overflow-x: auto;"></div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Review Screen -->
+            <section id="review-screen" class="hidden">
+                <div class="quiz-card">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 10px;">
+                        <h2 class="quiz-section-title" style="margin: 0; border: none; padding: 0;">
+                            Answer Review
+                        </h2>
+                        <button id="back-from-review-btn" class="quiz-btn-secondary">
+                            &larr;&nbsp; Back to Results
+                        </button>
+                    </div>
+
+                    <div id="review-container"></div>
+
+                    <div style="text-align: center; margin-top: 28px;">
+                        <button id="review-back-to-top-btn" class="quiz-btn-secondary">
+                            &#8679;&nbsp; Back to Top
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+    <script>
+        w3.includeHTML();
+
+        // Mobile menu toggle script
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+    </script>
+</body>
+
+</html>

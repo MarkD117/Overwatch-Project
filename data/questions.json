@@ -1,0 +1,352 @@
+[
+  {
+    "question": "Which hero is known as the 'Guardian Angel' of Overwatch?",
+    "options": ["Lucio", "Ana", "Mercy", "Moira"],
+    "correctIndex": 2,
+    "category": "Heroes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What role does Reinhardt play in Overwatch 2?",
+    "options": ["Damage", "Support", "Tank", "Flex"],
+    "correctIndex": 2,
+    "category": "Heroes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which hero says 'It's high noon!'?",
+    "options": ["Hanzo", "Ashe", "Cassidy", "Soldier: 76"],
+    "correctIndex": 2,
+    "category": "Heroes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is Tracer's real name?",
+    "options": ["Emily Winston", "Lena Oxton", "Claire Morrison", "Sarah Wheeler"],
+    "correctIndex": 1,
+    "category": "Heroes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What nationality is Ana?",
+    "options": ["Israeli", "Egyptian", "Turkish", "Iranian"],
+    "correctIndex": 1,
+    "category": "Heroes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which hero was added to Overwatch 2 at the start of Season 1?",
+    "options": ["Sojourn", "Junker Queen", "Kiriko", "Ramattra"],
+    "correctIndex": 2,
+    "category": "Heroes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is Widowmaker's real name?",
+    "options": ["Amélie Lacroix", "Colette Durant", "Isabelle Moreau", "Chloé Bernard"],
+    "correctIndex": 0,
+    "category": "Heroes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What organisation does Symmetra work for?",
+    "options": ["Talon", "Blackwatch", "Vishkar Corporation", "Helix Security"],
+    "correctIndex": 2,
+    "category": "Heroes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is Reaper's real name?",
+    "options": ["Jack Morrison", "Gabriel Reyes", "Antonio Bartalotti", "Moira O'Deorain"],
+    "correctIndex": 1,
+    "category": "Heroes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which hero currently has the most reworks?",
+    "options": ["Sombra", "Symmetra", "Bastion", "Lifeweaver"],
+    "correctIndex": 0,
+    "category": "Heroes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which hero currently has the most skins in the game?",
+    "options": ["D.Va", "Mercy", "Kiriko", "Tracer"],
+    "correctIndex": 1,
+    "category": "Heroes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What country is the Overwatch 2 map 'Busan' set in?",
+    "options": ["Japan", "China", "South Korea", "Thailand"],
+    "correctIndex": 2,
+    "category": "Maps",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which game mode does the map 'King's Row' use?",
+    "options": ["Control", "Escort", "Hybrid", "Push"],
+    "correctIndex": 2,
+    "category": "Maps",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What continent is the Overwatch 2 map 'Numbani' set on?",
+    "options": ["Asia", "Europe", "North America", "Africa"],
+    "correctIndex": 3,
+    "category": "Maps",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which map is set on a Lunar Base?",
+    "options": ["Ecopoint: Antarctica", "Horizon Lunar Colony", "Watchpoint: Gibraltar", "Rialto"],
+    "correctIndex": 1,
+    "category": "Maps",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which European country is the map 'Circuit Royal' set in?",
+    "options": ["France", "Monaco", "Italy", "Spain"],
+    "correctIndex": 1,
+    "category": "Maps",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which map features a battle through a castle in Germany?",
+    "options": ["Rialto", "Castillo", "Eichenwalde", "Dorado"],
+    "correctIndex": 2,
+    "category": "Maps",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which Overwatch 2 map is set in Brazil?",
+    "options": ["Castillo", "Dorado", "Paraiso", "Route 66"],
+    "correctIndex": 2,
+    "category": "Maps",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What real-world city is the map 'Rialto' based on?",
+    "options": ["Florence", "Venice", "Rome", "Naples"],
+    "correctIndex": 1,
+    "category": "Maps",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the name of the Overwatch 2 map set in Rome, Italy?",
+    "options": ["Circuit Royal", "Colosseo", "Midtown", "Esperança"],
+    "correctIndex": 1,
+    "category": "Maps",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which Overwatch 2 map is set in New York City?",
+    "options": ["Hollywood", "Midtown", "Havana", "Numbani"],
+    "correctIndex": 1,
+    "category": "Maps",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is Genji's ultimate ability called?",
+    "options": ["Swift Strike", "Dragonblade", "Deflect", "Cyber-Agility"],
+    "correctIndex": 1,
+    "category": "Abilities",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which ability allows Tracer to travel backward in time?",
+    "options": ["Blink", "Pulse Bomb", "Recall", "Time Warp"],
+    "correctIndex": 2,
+    "category": "Abilities",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is Reaper's ultimate ability?",
+    "options": ["Shadow Step", "Wraith Form", "Death Blossom", "Soul Harvest"],
+    "correctIndex": 2,
+    "category": "Abilities",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the name of Hanzo's ultimate ability?",
+    "options": ["Dragonstrike", "Storm Bow", "Scatter Arrow", "Spirit Dragon"],
+    "correctIndex": 0,
+    "category": "Abilities",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which hero has an ability called 'Kinetic Grasp'?",
+    "options": ["Roadhog", "Sigma", "Orisa", "Wrecking Ball"],
+    "correctIndex": 1,
+    "category": "Abilities",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What does Lucio's Crossfade ability toggle between?",
+    "options": ["Healing and Damage", "Healing and Speed", "Shielding and Speed", "Healing and Defence"],
+    "correctIndex": 1,
+    "category": "Abilities",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What unique mechanic increases Zarya's damage output?",
+    "options": ["Healing allies", "Absorbing damage with her barriers", "Killing enemies", "Landing headshots"],
+    "correctIndex": 1,
+    "category": "Abilities",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which hero's primary fire is classified as a 'Biotic Rifle'?",
+    "options": ["Moira", "Baptiste", "Ana", "Lucio"],
+    "correctIndex": 2,
+    "category": "Abilities",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the name of Wrecking Ball's ultimate ability?",
+    "options": ["Adaptive Shield", "Minefield", "Piledriver", "Grappling Claw"],
+    "correctIndex": 1,
+    "category": "Abilities",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the name of Junker Queen's ultimate ability?",
+    "options": ["Carnage", "Commanding Shout", "Rampage", "Jagged Blade"],
+    "correctIndex": 2,
+    "category": "Abilities",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Who is Pharah's mother?",
+    "options": ["Mercy", "Ana", "Moira", "Symmetra"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What villainous organisation opposes Overwatch?",
+    "options": ["Vishkar", "Talon", "Helix Security", "Null Sector"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What species is Zenyatta?",
+    "options": ["Human", "Cyborg", "Omnic", "AI Program"],
+    "correctIndex": 2,
+    "category": "Lore",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What law made the Overwatch organisation illegal?",
+    "options": ["The Geneva Convention", "The Petras Act", "The Oasis Agreement", "The Omnic Accord"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What happened to Overwatch's Swiss headquarters?",
+    "options": ["It was captured by Talon", "It was destroyed in an explosion", "It was flooded by Null Sector", "It was shut down by a UN vote"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Who became the leader of Talon in Overwatch's lore?",
+    "options": ["Reaper", "Moira", "Doomfist", "Sombra"],
+    "correctIndex": 2,
+    "category": "Lore",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How did Amélie Lacroix become Widowmaker?",
+    "options": ["She defected from Overwatch voluntarily", "She was brainwashed by Talon to assassinate her husband", "She was experimented on by Moira", "She was a Talon agent from birth"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is Soldier: 76's real name?",
+    "options": ["Gabriel Reyes", "Jack Morrison", "Samuel Petras", "John Rutledge"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What caused the Omnic Crisis?",
+    "options": ["A Talon-released virus", "Omnic factory AI systems went rogue and attacked humanity", "Omnics were given free will by scientists", "An alien signal triggered Omnic aggression"],
+    "correctIndex": 1,
+    "category": "Lore",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is Pharah's real name?",
+    "options": ["Fareeha Amari", "Fareeha Hassan", "Fareeha Al-Rashid", "Nadia Amari"],
+    "correctIndex": 0,
+    "category": "Lore",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "How many players are on each team in Overwatch 2?",
+    "options": ["4", "5", "6", "7"],
+    "correctIndex": 1,
+    "category": "Gamemodes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "In which game mode do teams fight over a single objective, with the winner being the first to reach 100%?",
+    "options": ["Escort", "Hybrid", "Control", "Push"],
+    "correctIndex": 2,
+    "category": "Gamemodes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What do teams escort in the 'Escort' game mode?",
+    "options": ["A flag", "A payload", "An omnic", "A bomb"],
+    "correctIndex": 1,
+    "category": "Gamemodes",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What unique element does the 'Push' game mode feature?",
+    "options": ["A moving platform", "A robot both teams fight to push", "Two separate payloads", "A capture point that changes location"],
+    "correctIndex": 1,
+    "category": "Gamemodes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Which game mode involves both capturing a control point AND then escorting a payload?",
+    "options": ["Control", "Push", "Flashpoint", "Hybrid"],
+    "correctIndex": 3,
+    "category": "Gamemodes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How many rounds does a standard 'Control' mode match last?",
+    "options": ["Best of 1", "Best of 3 - first team to win 2 rounds", "Best of 5 - first team to win 3 rounds", "Fixed 3 rounds regardless"],
+    "correctIndex": 1,
+    "category": "Gamemodes",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "How many players were on each team in the original Overwatch 1?",
+    "options": ["4", "5", "6", "8"],
+    "correctIndex": 2,
+    "category": "Gamemodes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "What is the name of the Overwatch 2 game mode where teams fight over multiple capture points spread across a large map?",
+    "options": ["Clash", "Flashpoint", "Control", "Assault"],
+    "correctIndex": 1,
+    "category": "Gamemodes",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Which game mode was removed from Overwatch 2 at launch - involving attacking and defending two sequential capture points?",
+    "options": ["Control", "Escort", "Assault (2CP)", "Hybrid"],
+    "correctIndex": 2,
+    "category": "Gamemodes",
+    "difficulty": "Hard"
+  }
+]

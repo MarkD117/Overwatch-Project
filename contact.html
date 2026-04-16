@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Overwatch 2</title>
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+
+    <!-- Contact Section -->
+    <main class="section-bg contact-section">
+        <div class="w3-container w3-content form-wrapper">
+            <!-- Contact Form -->
+            <div class="w3-center">
+                <div class="contact-form">
+                    <div class="w3-center w3-margin-bottom">
+                        <h1 class="w3-text-white form-title">GET IN TOUCH</h1>
+                    </div>
+                    <form class="w3-container" action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name*</label>
+                            <input class="form-input" type="text" id="name" name="name"
+                                placeholder="Enter your name or Battletag" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email*</label>
+                            <input class="form-input" type="email" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <select class="form-input" id="subject" name="subject">
+                                <option value="" class="w3-text-black">Select a topic...</option>
+                                <option value="general" class="w3-text-black">General Inquiry</option>
+                                <option value="support" class="w3-text-black">Technical Support</option>
+                                <option value="feedback" class="w3-text-black">Feedback</option>
+                                <option value="partnership" class="w3-text-black">Partnership</option>
+                                <option value="other" class="w3-text-black">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message*</label>
+                            <textarea class="form-input form-textarea" id="message" name="message"
+                                placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <div class="w3-center">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+
+    <script>
+        w3.includeHTML();
+
+        // Mobile menu toggle script
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - Overwatch 2</title>
+    <link rel="stylesheet" href="static/css/w3.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    <script src="https://kit.fontawesome.com/324d5be901.js" crossorigin="anonymous" async></script>
+    <script src="static/js/w3.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header data-include-html="includes/header.html"></header>
+    <main class="report-section">
+        <div class="w3-container w3-content">
+            <div class="w3-center w3-margin-bottom">
+                <h1 class="w3-text-white w3-bold report-heading">
+                    Website Report</h1>
+                <p class="w3-text-white w3-large">Technical documentation and implementation details</p>
+            </div>
+            <!-- Report Accordion -->
+            <div class="w3-content" style="max-width: 1000px;">
+                <!-- Home Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Home Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="index.html" class="page-link" target="_blank">index.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Main landing page featuring hero video background with overlay, game
+                                        introduction section with embedded YouTube
+                                        video, latest updates section, and game features cards. Uses advanced CSS
+                                        for video overlay effects, flexbox for
+                                        centering, and responsive iframe containers. Complex z-index layering for
+                                        nav bar positioning over video
+                                        background. The game info section was particularly difficult as the W3CSS
+                                        grid breakpoints are limited when it
+                                        comes to 4 | 2 | 1 type layouts on larger screens. Custom CSS and media
+                                        queries were used to adjust the breakpoints.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Heroes Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Heroes Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="heroes.html" class="page-link" target="_blank">heroes.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Interactive hero showcase. Features hover effects on hero cards, dynamic
+                                        Javascript filtering and CSS
+                                        transforms for smooth animations. Uses W3CSS Grid for responsive
+                                        layout. Complex hover states with image scaling and overlay effects. This
+                                        page was not inherently difficult to create as the responsive grid seemed
+                                        to work well with the hero cards. This was mainly due to the fact that the
+                                        content was all the same size. Adding more content gave issues with the
+                                        breakpoints. Some custom css was used to achieve a responsive layout. I
+                                        initially intended to have hero detail pages for each hero but due to
+                                        time constraints that idea was ultimately scrapped. the card filter logic is
+                                        relatively simple, it uses HTML data attributes to check each card's role and
+                                        only displays the ones that match the selected filter. The logic is similar to
+                                        the example from <a href="https://www.youtube.com/watch?v=kkih4C80QTk">ZinoTrust
+                                            Academy</a> on YouTube. The custom scroll on the
+                                        filter buttons was created using the documentation from <a
+                                            href="https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp">W3Schools</a>.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Gallery Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Gallery Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="gallery.html" class="page-link" target="_blank">gallery.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Image gallery created by implementing W3CSS Rows Grid system for
+                                        masonry-style layout, JavaScript for modal interactions, and
+                                        smooth transitions. Features lazy loading concepts and optimized image
+                                        display with aspect ratio preservation. This was quite a simple page to
+                                        create and works well on all screens. Plugins could be used to allow users
+                                        to view each image in detail but again, due to time constraints. That
+                                        feature is not implemented.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- News Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>News Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="news.html" class="page-link" target="_blank">news.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>News article layout with featured article section and grid-based article
+                                        cards. Uses CSS gradients for card backgrounds, hover animations with
+                                        transform effects, and responsive grid system. Implements card-based design
+                                        with consistent spacing and typography hierarchy. This page did give some
+                                        difficulty with the card layouts and custom CSS was used to change the
+                                        default breakpoints of W3CSS.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Contact Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Contact Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="contact.html" class="page-link" target="_blank">contact.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Contact form with glassmorphism design using backdrop-filter and rgba
+                                        backgrounds. Features form validation, custom styled inputs, and responsive
+                                        layout. Uses advanced CSS for form styling, JavaScript for form handling,
+                                        and media queries for mobile optimisation. The glassmorphism technique is
+                                        similar to a backgroud used by <a
+                                            href="https://www.youtube.com/watch?v=dsZ7RN9ItR4" target="_blank">Kevin
+                                            Powell</a>.
+                                        A simple JavaScript function shows an alert and redirects the user back to
+                                        the home page. This page was relatively simple to make, and due to the
+                                        nature
+                                        of how block level elements work, the left aligned layout was quite easy to
+                                        get the way I
+                                        wanted.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Report Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Report Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="report.html" class="page-link" target="_blank">report.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Technical documentation page with interactive accordion interface. Features
+                                        smooth CSS transitions, JavaScript toggle functionality, and responsive
+                                        table design. Implements advanced styling for accordion headers, content
+                                        areas, and table formatting with hover effects. This page was also not too
+                                        difficult to set up as inspiration for the logic of the JavaScript used to open
+                                        and close the accordions came from the <a
+                                            href="https://www.w3schools.com/w3css/w3css_accordions.asp"
+                                            target="_blank">W3.CSS
+                                            Accordion</a> documentation.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 404 Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>404 Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="404.html" class="page-link" target="_blank">404.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Custom 404 error page with Overwatch-themed messaging and animated floating
+                                        icons. Features CSS keyframe animations, gradient backgrounds, and responsive
+                                        design. Includes smooth hover effects on the return
+                                        button and floating background elements for visual interest. This page was
+                                        simple enough to create as all the content is centered. The most difficult part
+                                        of the page was getting the icons to animate using keyframes. Inspiration was
+                                        taken from a video from <a href="https://www.youtube.com/watch?v=89vz08bOT_M"
+                                            target="_blank">WebStylePress</a> on
+                                        YouTube.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Privacy Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Privacy Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="privacy.html" class="page-link" target="_blank">privacy.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Privacy policy page with standard legal sections covering data collection,
+                                        usage, sharing, and user rights. Uses W3CSS for layout with orange accent
+                                        styling and proper typography hierarchy. Includes educational disclaimer noting
+                                        it's a student project. Features clean, readable design with numbered sections
+                                        and bulleted lists for easy navigation. This page was simple to make as it is
+                                        styled almost exclusively using W3CSS with custom inline CSS for some spacing
+                                        and
+                                        colors.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Terms Page -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Terms Page</span>
+                        <i class="fa fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <table class="w3-table report-table">
+                            <thead>
+                                <tr>
+                                    <th>Page</th>
+                                    <th>Markup</th>
+                                    <th>Responsive</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="terms.html" class="page-link" target="_blank">terms.html</a></td>
+                                    <td>HTML5, CSS3, W3CSS</td>
+                                    <td><span class="responsive-yes">Yes</span></td>
+                                    <td>Terms of service page with comprehensive legal sections including use license,
+                                        disclaimers, limitations, and user conduct rules. Matches privacy page styling
+                                        with W3CSS layout and orange accent elements. Covers standard legal requirements
+                                        like liability limitations, governing law, and termination clauses. Includes
+                                        educational disclaimer for student project context. The structure for this page
+                                        is the same as the Privacy Policy page and again almost exclusively uses W3CSS
+                                        for the styling.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer data-include-html="includes/footer.html"></footer>
+    <script>
+        w3.includeHTML();
+
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            // Close all other accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.classList.remove('active');
+                    item.previousElementSibling.querySelector('.accordion-icon').classList.remove('active');
+                }
+            });
+
+            // Toggle current accordion
+            content.classList.toggle('active');
+            icon.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
