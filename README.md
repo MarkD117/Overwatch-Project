@@ -1,6 +1,6 @@
 # Overwatch 2 Project
 
-A multi-page fan website for Overwatch 2 (Before the removed the 2...), built as a college assignment. The site covers game content across several pages - Heroes, Gallery, News, and more - with the centrepiece being a fully interactive, configurable quiz that tests player knowledge across five categories.
+A multi-page fan website for Overwatch 2 (Before they removed the 2...), built as a college assignment. The site covers game content across several pages - Heroes, Gallery, News, and more - with the centrepiece being a fully interactive, configurable quiz that tests player knowledge across five categories.
 
 The live project can be accessed [here](https://markd117.github.io/Overwatch-Project/index.html)
 
